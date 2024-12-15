@@ -52,10 +52,10 @@ On **Sender's VM**, navigate to the directory where you extracted **PoCa.zip**. 
 
 ```bash
 # Clone the repository
-git clone <YOUR_GITHUB_REPO_URL> hybrid-steganographic-protocol
+git clone https://github.com/Omego-Obinna/hybrid-multi-stego.git 
 cd hybrid-steganographic-protocol
 ```
-> **Note:** Replace `<YOUR_GITHUB_REPO_URL>` with the URL of your GitHub repository.
+
 
 ---
 
