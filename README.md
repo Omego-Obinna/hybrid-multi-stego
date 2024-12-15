@@ -1,6 +1,6 @@
 # Hybrid Steganographic Protocol
 
-This repository demonstrates how to run the **Hybrid Steganographic Protocol** using two Ubuntu virtual machines (VMs), simulating real-world distributed communication between **Sender** (the sender) and **Recipient** (the receiver). The protocol combines elements of **steganography by cover synthesis** and **steganography by cover modification** to enhance security, ensuring covert and unsuspicious communication. The system achieves this by various approaches including embedding a secret message into a stego-object using **Least Significant Bit (LSB) steganography** in **PNG images**.
+This repository demonstrates how to run the **Hybrid Steganographic Protocol** using two Ubuntu virtual machines (VMs), simulating real-world distributed communication between **Sender** (the sender) and **Recipient** (the receiver). The protocol combines elements of **steganography by cover synthesis** and **steganography by cover modification** to enhance security, ensuring covert and unsuspicious communication.
 
 ---
 
