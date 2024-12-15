@@ -17,6 +17,25 @@ This repository demonstrates how to run the **Hybrid Steganographic Protocol** u
 
 ## 📋 **Prerequisites**
 
+To get started, you will need to download the implementation files. The repository includes two zip files:
+
+- **PoCa.zip**: This file should be extracted on the **Sender's VM**.
+- **PoCb.zip**: This file should be extracted on the **Recipient's VM**.
+
+### **Download the Implementation Files**
+1. Download the zip files from the following links:
+   - [Download PoCa.zip](<URL_FOR_PoCa>)
+   - [Download PoCb.zip](<URL_FOR_PoCb>)
+
+2. Extract the zip files on the respective VMs:
+   ```bash
+   # On Sender's VM
+   unzip PoCa.zip -d /path/to/desired/directory
+
+   # On Recipient's VM
+   unzip PoCb.zip -d /path/to/desired/directory
+   ```
+
 To run this protocol, you will need:
 
 - **Ubuntu** (20.04, 22.04, or any supported version) on two separate virtual machines.
@@ -29,7 +48,7 @@ To run this protocol, you will need:
 
 ## 1️⃣ **Clone the Repository**
 
-On both **Sender's VM** and **Recipient's VM**, open a terminal and run:
+On **Sender's VM**, navigate to the directory where you extracted **PoCa.zip**. On **Recipient's VM**, navigate to the directory where you extracted **PoCb.zip**. Then, open a terminal on each VM and run:
 
 ```bash
 # Clone the repository
@@ -42,7 +61,7 @@ cd hybrid-steganographic-protocol
 
 ## 2️⃣ **Install Required Python Packages**
 
-Run the following commands on **both VMs**:
+Run the following commands on both the **Sender's VM** and **Recipient's VM** in their respective directories where **PoCa.zip** and **PoCb.zip** were extracted:
 
 ```bash
 sudo apt update
