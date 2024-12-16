@@ -30,10 +30,10 @@ To get started, you will need to download the implementation.zip file. The repos
 2. Extract the zip files on the respective VMs:
    ```bash
    # On Sender's VM
-   unzip PoCa.zip -d /path/to/desired/directory
+   unzip PoCa -d /path/to/desired/directory
 
    # On Recipient's VM
-   unzip PoCb.zip -d /path/to/desired/directory
+   unzip PoCb -d /path/to/desired/directory
    ```
 
 To run this protocol, you will need:
