@@ -17,15 +17,15 @@ This repository demonstrates how to run the **Hybrid Steganographic Protocol** u
 
 ## 📋 **Prerequisites**
 
-To get started, you will need to download the implementation files. The repository includes two zip files:
+To get started, you will need to download the implementation.zip file. The repository includes two files:
 
-- **PoCa.zip**: This file should be extracted on the **Sender's VM**.
-- **PoCb.zip**: This file should be extracted on the **Recipient's VM**.
+- **PoCa**: This file should be extracted on the **Sender's VM**.
+- **PoCb**: This file should be extracted on the **Recipient's VM**.
 
 ### **Download the Implementation Files**
-1. Download the zip files from the following links:
-   - [Download PoCa.zip](<URL_FOR_PoCa>)
-   - [Download PoCb.zip](<URL_FOR_PoCb>)
+1. Download the two files:
+   - PoCa
+   - PoCb
 
 2. Extract the zip files on the respective VMs:
    ```bash
