@@ -201,7 +201,7 @@ hybrid-steganographic-protocol/
 ---
 
 ## 🔥 **Congratulations!**
-You have successfully implemented and run the **Hybrid Steganographic Protocol** on two Ubuntu VMs. For any issues or contributions, please submit an issue or pull request on the GitHub repository.
+You have successfully implemented and run the **Hybrid Steganographic Protocol** on two Ubuntu VMs.
 
 **Happy Steganography!**
 
