@@ -1,0 +1,161 @@
+# ============================================================
+# Hybrid Multichannel Steganography
+# Project-specific .gitignore
+# ============================================================
+
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------------
+# IDE / editor files
+# ----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Local secrets / credentials
+# Never commit real keys or environment secrets
+# ----------------------------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# ----------------------------
+# Datasets
+# BOSSbase and other third-party datasets should be obtained
+# separately and must not be redistributed through this repo.
+# ----------------------------
+data/
+datasets/
+BOSSbase_1.01/
+BOSSbase*/
+bossbase*/
+
+# ----------------------------
+# Generated stego / cover corpora
+# Keep only small illustrative examples in examples/
+# ----------------------------
+outputs/
+output/
+generated/
+generated_data/
+generated_images/
+stego_images/
+cover_images_generated/
+
+ours_qim_v3_2_fused075_payloads_FULL/
+ours_qim_*/
+ours_qim_v*/
+
+# ----------------------------
+# SRM / maxSRM feature caches
+# ----------------------------
+features/
+shared_srm_cache/
+**/shared_srm_cache/
+*.npy
+*.npz
+
+# ----------------------------
+# CNN checkpoints and training artefacts
+# ----------------------------
+checkpoints/
+checkpoint/
+models/checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+runs/
+wandb/
+tensorboard/
+lightning_logs/
+
+yenet_main_results_*/
+yedroudj_main_results_*/
+
+# ----------------------------
+# Large SRM+EC experiment directories
+# Compact final CSV summaries should instead be copied to results/
+# ----------------------------
+payload_*_seed*_srm_ec*/
+payload_*_srm_ec*/
+
+# ----------------------------
+# Temporary experiment files
+# ----------------------------
+tmp/
+temp/
+.cache/
+cache/
+*.tmp
+*.bak
+
+# ----------------------------
+# Logs
+# Keep selected compact CSV logs manually when needed for figures
+# ----------------------------
+*.log
+logs/raw/
+slurm-*.out
+
+# ----------------------------
+# Build / packaging artefacts
+# ----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ----------------------------
+# Jupyter
+# ----------------------------
+.ipynb_checkpoints/
+
+# ============================================================
+# INTENTIONALLY NOT IGNORED
+# ============================================================
+# README.md
+# requirements.txt
+# CITATION.cff
+# LICENSE
+# configs/
+# splits/
+# results/
+# scripts/
+# src/
+# protocol/
+# experiments/
+# examples/
+#
+# Compact result CSVs and publication figures may therefore
+# be committed when they directly support the manuscript.
+# ============================================================
