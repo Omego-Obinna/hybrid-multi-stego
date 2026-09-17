@@ -57,7 +57,7 @@ The evaluation considers both embedding fidelity and resistance to steganalysis.
 
 ## 3. Repository Layout
 
-A compact recommended layout is:
+The layout should be structured as it is uploaded. It can be structured alternatively. However, an alternative recommended layout should be:
 
 ```text
 hybrid-multi-stego/
@@ -81,26 +81,9 @@ hybrid-multi-stego/
 │   ├── run_yedroudj.py
 │   └── run_linkability.py
 │
-├── configs/
-│   ├── qim_v3_2.yaml
-│   ├── yenet.yaml
-│   └── yedroudj.yaml
-│
-├── splits/
-│   └── bossbase_seed20260605.csv
 │
 ├── results/
-│   ├── embedding_fidelity.csv
-│   ├── detectors_payloads_test.csv
-│   ├── qim_resync_robustness.csv
-│   ├── linkability_binary_results.csv
-│   └── linkability_multiclass_results.csv
-│
-├── scripts/
-│   └── make_all_detector_tables_plots.py
-│
-└── examples/
-    └── README.md
+│   ├──
 ```
 
 The exact filenames may differ slightly from the local research environment. The important requirement is that the repository preserves the **code, configurations, dataset split, compact result summaries, and figure-generation logic** needed to reproduce the reported experiments.
@@ -199,7 +182,6 @@ Repeat for the payloads required by the manuscript, for example:
 ```bash
 0.10
 0.20
-0.30
 0.40
 ```
 
@@ -209,7 +191,7 @@ Generated stego images should normally be written to a local `outputs/` director
 
 ## 7. Steganalysis
 
-### 7.1 maxSRM + Ensemble Classifier
+### 7.1 SRM + Ensemble Classifier
 
 Run the classical steganalysis experiment using the required payload:
 
@@ -219,7 +201,7 @@ python experiments/run_srm_ec.py \
     --seed 20260605
 ```
 
-The SRM feature cache can be expensive to generate. Cached feature arrays should be stored locally and excluded from Git.
+NOTE: The SRM feature cache can be expensive to generate.
 
 Recommended metrics include:
 
@@ -233,9 +215,7 @@ Recommended metrics include:
 
 ### 7.2 Ye-Net
 
-The Ye-Net experiments use a fixed configuration recorded in `configs/yenet.yaml`.
-
-Representative settings used in the study include:
+The Ye-Net experiments use a fixed configuration, and the representative settings used in the study include:
 
 ```text
 epochs: 80
@@ -261,9 +241,7 @@ python experiments/run_yenet.py \
 
 ### 7.3 Yedroudj-Net
 
-The Yedroudj-Net configuration is stored in `configs/yedroudj.yaml`.
-
-Representative settings include:
+The Yedroudj-Net representative settings include:
 
 ```text
 learning_rate: 0.001
@@ -274,24 +252,15 @@ augmentation: true
 seed: 20260605
 ```
 
-Run with:
-
-```bash
-python experiments/run_yedroudj.py \
-    --config configs/yedroudj.yaml \
-    --payload 0.20
-```
-
 ---
 
 ## 8. Linkability Probes
 
 The linkability experiments evaluate whether an informed warden can distinguish linked observations from shuffled or independently paired observations.
 
-Run the compact experiment wrapper with:
+Run the compact experiment wrapper using the seed:
 
 ```bash
-python experiments/run_linkability.py \
     --seed 20260605
 ```
 
@@ -303,7 +272,7 @@ The repository should contain only the scripts, configuration, and final compact
 
 Only compact numerical outputs needed to support the manuscript should be committed.
 
-Recommended files include:
+Recommended files include for example:
 
 ```text
 results/
@@ -328,46 +297,7 @@ The repository should avoid committing:
 
 ---
 
-## 10. Regenerating Tables and Figures
-
-The combined detector tables and plots can be regenerated with:
-
-```bash
-python scripts/make_all_detector_tables_plots.py \
-    --split test \
-    --width 11.0 \
-    --height 5.0 \
-    --epoch-width 13.0 \
-    --epoch-height 4.2 \
-    --formats pdf png svg \
-    --dpi 300
-```
-
-The script should read the compact detector-result files and generate the publication-ready comparison table and detector/epoch figures.
-
----
-
-## 11. Original Two-VM Protocol Demonstration
-
-The repository originated as an implementation of the multichannel hybrid steganographic protocol using separate sender and receiver virtual machines.
-
-The original workflow contains the sender-side setup/synthesis, cover-message transmission, LSB embedding, receiver-side HTTP services, integrity verification, and secret extraction.
-
-For preservation and reproducibility, this implementation should be retained under a dedicated directory such as:
-
-```text
-protocol/
-├── sender/
-└── receiver/
-```
-
-rather than distributed as a single opaque archive where possible.
-
-The protocol-level implementation uses packages including Flask, Requests, NumPy, Pillow, HMAC/hash functionality from the Python standard library, and Reed-Solomon support where enabled.
-
----
-
-## 12. Reproducibility Notes
+## 10. Reproducibility Notes
 
 For comparable results:
 
@@ -390,13 +320,13 @@ This lock file is optional and should complement, not replace, the cleaner human
 
 ---
 
-## 13. Citation
+## 11. Citation
 
 Please, the citation will be provided when final journal bibliographic information when the peer-reviewed version becomes available.
 
 ---
 
-## 14. Licence
+## 12. Licence
 
 This repository is distributed under the **Apache License 2.0**. See `LICENSE` for details.
 
@@ -404,19 +334,15 @@ Third-party datasets, external steganalysis implementations, and derived detecto
 
 ---
 
-## 15. Authors
+## 13. Authors
 
 **Obinna Omego**  
 School of Computer Science and Mathematics  
 Kingston University London  
 
-**Michał Bosy**  
-School of Computer Science and Mathematics  
-Kingston University London  
-
 ---
 
-## 16. Contact and Issues
+## 14. Contact and Issues
 
 For reproducibility questions, implementation problems, or corrections, please use the GitHub **Issues** section of this repository.
 
