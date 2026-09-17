@@ -67,9 +67,6 @@ hybrid-multi-stego/
 ├── requirements.txt
 ├── .gitignore
 │
-├── protocol/
-│   ├── sender/
-│   └── receiver/
 │
 ├── src/
 │   ├── hybrid_stego.py
