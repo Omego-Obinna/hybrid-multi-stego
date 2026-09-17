@@ -37,7 +37,7 @@ At protocol level, the method uses independently transmitted cover information t
 The current experimental method is referred to as:
 
 ```text
-Ours-QIM-v3.2-Fused-CF
+QIM-Fused-CF
 ```
 
 The evaluation considers both embedding fidelity and resistance to steganalysis.
@@ -45,7 +45,7 @@ The evaluation considers both embedding fidelity and resistance to steganalysis.
 ### Main evaluation components
 
 - embedding fidelity and extraction correctness;
-- payloads including `0.10`, `0.20`, `0.30`, and `0.40` bpp where applicable;
+- payloads including `0.10`, `0.20`, and `0.40` bpp where applicable;
 - maxSRM + Ensemble Classifier;
 - Ye-Net;
 - Yedroudj-Net;
@@ -395,18 +395,7 @@ This lock file is optional and should complement, not replace, the cleaner human
 
 ## 13. Citation
 
-If you use this repository, please cite the associated manuscript:
-
-```bibtex
-@article{omego_multichannel_steganography,
-  author  = {Obinna Omego and Michał Bosy},
-  title   = {Multichannel Steganography: A Provably Secure Hybrid Steganographic Model},
-  journal = {arXiv preprint},
-  year    = {2025}
-}
-```
-
-Please update the citation with the final journal bibliographic information when the peer-reviewed version becomes available.
+Please, the citation will be provided when final journal bibliographic information when the peer-reviewed version becomes available.
 
 ---
 
