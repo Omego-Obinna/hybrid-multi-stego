@@ -1,0 +1,46 @@
+# Hybrid Multichannel Steganography
+# Core reproducibility environment
+#
+# Recommended Python: 3.10+
+#
+# Notes:
+# 1. For CUDA-enabled PyTorch, install the build matching your CUDA
+#    environment using the official PyTorch installation selector.
+# 2. Exact experiment snapshots can be stored separately with:
+#       pip freeze > requirements-lock.txt
+
+# Core numerical/scientific stack
+numpy>=1.24,<3.0
+scipy>=1.10,<2.0
+pandas>=2.0,<3.0
+
+# Image processing and quality metrics
+Pillow>=10.0
+scikit-image>=0.22
+opencv-python-headless>=4.8
+PyWavelets>=1.5
+
+# Classical steganalysis / machine learning
+scikit-learn>=1.3
+joblib>=1.3
+
+# Deep-learning steganalysis
+torch>=2.2
+torchvision>=0.17
+
+# Experiment configuration and progress reporting
+PyYAML>=6.0
+tqdm>=4.66
+
+# Plotting and publication figures
+matplotlib>=3.8
+
+# Original distributed protocol implementation
+Flask>=3.0
+requests>=2.31
+
+# Error-correcting code used by the protocol implementation
+reedsolo>=1.7
+
+# Text/readability analysis used for cover-message evaluation
+textstat>=0.7
