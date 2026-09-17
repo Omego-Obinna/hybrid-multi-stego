@@ -1,0 +1,98 @@
+{
+  "image_only": {
+    "main": {
+      "x": 0.0,
+      "y": 1.115,
+      "fontsize": 10.5,
+      "fontweight": "semibold",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#222222",
+      "ha": "left",
+      "va": "bottom"
+    },
+    "subtitle": {
+      "x": 0.0,
+      "y": 1.025,
+      "fontsize": 9.2,
+      "fontweight": "normal",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#505050",
+      "ha": "left",
+      "va": "bottom"
+    }
+  },
+  "text_only": {
+    "main": {
+      "x": 0.0,
+      "y": 1.115,
+      "fontsize": 10.5,
+      "fontweight": "semibold",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#222222",
+      "ha": "left",
+      "va": "bottom"
+    },
+    "subtitle": {
+      "x": 0.0,
+      "y": 1.025,
+      "fontsize": 9.2,
+      "fontweight": "normal",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#505050",
+      "ha": "left",
+      "va": "bottom"
+    }
+  },
+  "cross_only": {
+    "main": {
+      "x": 0.0,
+      "y": 1.115,
+      "fontsize": 10.5,
+      "fontweight": "semibold",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#222222",
+      "ha": "left",
+      "va": "bottom"
+    },
+    "subtitle": {
+      "x": 0.0,
+      "y": 1.025,
+      "fontsize": 9.2,
+      "fontweight": "normal",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#505050",
+      "ha": "left",
+      "va": "bottom"
+    }
+  },
+  "text_image": {
+    "main": {
+      "x": 0.0,
+      "y": 1.115,
+      "fontsize": 10.5,
+      "fontweight": "semibold",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#222222",
+      "ha": "left",
+      "va": "bottom"
+    },
+    "subtitle": {
+      "x": 0.0,
+      "y": 1.025,
+      "fontsize": 9.2,
+      "fontweight": "normal",
+      "fontstyle": "normal",
+      "fontfamily": "DejaVu Sans",
+      "color": "#505050",
+      "ha": "left",
+      "va": "bottom"
+    }
+  }
+}
